@@ -1,4 +1,47 @@
-const obj = {
+
+// CODE HERE
+
+interface Address {
+    city: string,
+    street: string,
+    postalCode: string
+}
+interface Companies {
+    id: number,
+    name: string,
+    description: string,
+    location: Address
+}
+
+enum Role{
+    STAFF= "staff",
+    STUDENT= "student",
+    MANAGER= "manager",
+    ADMIN="admin"
+
+}
+
+enum Gender { Male= "male", Female="female"
+}
+
+interface NewObj{
+    id: number,
+    name: string,
+    surname: string,
+    age: number,
+    dateOfBirth: string
+    address: Address
+role: Role,
+username: string,
+profilePhotoUrl: string,
+companies: Companies[]
+gender: Gender
+
+
+}
+
+
+const obj: NewObj = {
 	id: 3487,
     name: 'Mario',
     surname: 'Rossi',
@@ -9,7 +52,7 @@ const obj = {
         street: 'Via roma 10',
         postalCode: '00100'
     },
-    role: 'staff', // Ruoli possibili: 'staff', 'student', 'manager', 'admin'
+    role: Role.STAFF, // Ruoli possibili: 'staff', 'student', 'manager', 'admin'
     username: 'MarioRossi80',
     profilePhotoUrl: 'https://bit.ly/3yRngEP',
     companies: [
@@ -34,7 +77,5 @@ const obj = {
             }
         }
 	],
-    gender: 'male' // Generi possibili: 'male', 'female', 'other'
+    gender: Gender.Male // Generi possibili: 'male', 'female', 'other'
 }
-
-// CODE HERE
