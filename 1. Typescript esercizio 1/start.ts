@@ -1,19 +1,19 @@
 
 // CODE HERE
 
-interface Address {
+ interface Address {
     city: string,
     street: string,
     postalCode: string
 }
-interface Companies {
+ interface Companies {
     id: number,
     name: string,
     description: string,
     location: Address
 }
 
-enum Role{
+ enum Role{
     STAFF= "staff",
     STUDENT= "student",
     MANAGER= "manager",
@@ -21,10 +21,10 @@ enum Role{
 
 }
 
-enum Gender { Male= "male", Female="female"
+ enum Gender { Male= "male", Female="female"
 }
 
-interface NewObj{
+ interface NewObj{
     id: number,
     name: string,
     surname: string,
